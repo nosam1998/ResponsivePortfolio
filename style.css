@@ -1,0 +1,9 @@
+.full-screen-height {
+    max-height: 100vh !important;
+}
+
+.image-covers {
+    width: 100%;
+    height: 743px;
+    object-fit: cover;
+}
