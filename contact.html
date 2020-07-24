@@ -10,71 +10,65 @@
     <!-- Import Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 
 <body>
     <!-- START Nav -->
-    <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-dark navbar-expand-lg navbar-custom-red bg-dark nav-link-styling">
+        <a class="navbar-brand navbar-link-font-size-bigger" href="#" data-toggle="collapse"
+            data-target="#navbarNavAltMarkup">Mason Curtis</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="#">Home</a>
-                <a class="nav-item nav-link active" href="contact.html">Contact</a>
-                <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link nav-link-styling" href="index.html">Home</a>
+                <a class="nav-item nav-link active nav-link-styling" style="color: black !important;"
+                    href="#">Contact</a>
+                <a class="nav-item nav-link nav-link-styling" href="portfolio.html">Portfolio</a>
             </div>
         </div>
     </nav>
     <!-- END Nav -->
 
-    <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-                to
-                featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </p>
+    <div class="container-md">
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 m-auto">
+                <form>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" aria-describedby="emailHelp"
+                            name="subject">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea class="form-control" id="description" rows="6" cols="80" name="body"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
         </div>
+
+
+        <script>
+            $("form").on("submit", function (event) {
+                event.preventDefault();
+                let mailStr = $(this).serialize();
+                let finalMailStr = "mailto:nosam1998@gmail.com?" + mailStr;
+                window.location.href = finalMailStr;
+            });
+        </script>
+
     </div>
-
-    <div class="row">
-        <div class="col-xs-12 col-sm-8 m-auto">
-            <form>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" class="form-control" id="subject" aria-describedby="emailHelp" name="subject">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                        else.</small>
-                </div>
-
-                <div class="form-group">
-                    <label for="description">Description</label>
-                    <textarea class="form-control" id="description" rows="6" cols="80" name="body"></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-    </div>
-
-
-    <script>
-        $("form").on("submit", function (event) {
-            event.preventDefault();
-            let mailStr = $(this).serialize();
-            let finalMailStr = "mailto:nosam1998@gmail.com?" + mailStr;
-            window.location.href = finalMailStr;
-        });
-    </script>
-
     <!-- Import required Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
