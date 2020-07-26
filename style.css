@@ -66,8 +66,17 @@
 
 /* Navbar styles end here */
 
-/* Container styles start here */
+.sticky-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
 
-
-
-/* Container styles end here */
+.cards-padding {
+    padding-bottom: 100px;
+}

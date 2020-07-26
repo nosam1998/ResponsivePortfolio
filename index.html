@@ -10,57 +10,140 @@
     <!-- Import Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Import Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- START Nav -->
-    <nav class="navbar navbar-dark navbar-expand-lg navbar-custom-red bg-dark nav-link-styling">
-        <a class="navbar-brand navbar-link-font-size-bigger text-border" href="#" data-toggle="collapse"
-            data-target="#navbarNavAltMarkup">Mason Curtis</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link active nav-link-styling" style="color: black !important;" href="#">Home</a>
-                <a class="nav-item nav-link nav-link-styling" href="contact.html">Contact</a>
-                <a class="nav-item nav-link nav-link-styling" href="portfolio.html">Portfolio</a>
-            </div>
-        </div>
-    </nav>
-    <!-- END Nav -->
+    <div class="wrapper">
 
-    <!-- Start of Container -->
-    <div class="container-md">
-
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 m-auto">
-                <div class="row">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.</p>
-                </div>
-
-                <div class="row">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.</p>
+        <!-- START Nav -->
+        <nav class="navbar navbar-dark navbar-expand-lg navbar-custom-red bg-dark nav-link-styling">
+            <a class="navbar-brand navbar-link-font-size-bigger text-border" href="#" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup">Mason Curtis</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-lg-auto">
+                    <a class="nav-item nav-link nav-link-styling active" style="color: black !important;"
+                        href="#">Home</a>
+                    <a class="nav-item nav-link nav-link-styling" href="contact.html">Contact</a>
+                    <a class="nav-item nav-link nav-link-styling" href="portfolio.html">Portfolio</a>
                 </div>
             </div>
+        </nav>
+        <!-- END Nav -->
+
+        <!-- Start of Container -->
+        <!-- Start fo Carousel -->
+        <!-- Start of container -->
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-4">
+
+                </div>
+                <div class="col-4">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Assets/Images/GoogleTripPictureOfMaps.jpg" class="d-block w-100"
+                                    alt="google maps picture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Assets/Images/google_sign.jpg" class="d-block w-100" alt="indoor google sign">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Assets/Images/night_buildings.jpg" class="d-block w-100" height="234"
+                                    alt="night buildings">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+
+                </div>
+            </div>
+            <!-- End of Carousel -->
+
+
         </div>
+        <!-- End of container -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4"></div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <h1>About Me:</h1>
+                    <p>
+                        I’m from a small town in Oregon and I have taught myself many different languages
+                        throughout the
+                        years. My interest in programming sparked in my adolescence and is still continuing to
+                        grow.
+                        Technology has been a great source of inspiration and challenge granting me many
+                        opportunities
+                        in life. On this webpage you will discover more about me, my skills, my passion for
+                        programming,
+                        and my hobbies. So… please enjoy my page and feel free to contact me at your leisure
+                    </p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4"></div>
+            </div>
+        </div>
+
+
+        <!-- Start of container -->
+        <div class="container cards-padding">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <img src="Assets/Images/google_sign.jpg" height="250" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <img src="Assets/Images/night_buildings.jpg" height="250" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="card" style="width: 18rem; margin: auto;">
+                        <img src="Assets/Images/google_glass_rubiks_cube.jpg" height="250" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Container -->
+
+        <footer class="sticky-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <p>
+                            footer
+                        </p>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </footer>
 
     </div>
-    <!-- End of Container -->
 
     <!-- Import required Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
